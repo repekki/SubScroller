@@ -1,9 +1,9 @@
 import serial # if you have not already done so
 from time import sleep
 
-with open("/path/to/file/mytext.txt") as file:  #change path accordingly
+with open("/home/pi/scroller/mytext.txt") as file:  #change path accordingly
         textStr = file.read()
-with open("/path/to/file/subcount.txt") as file:
+with open("/home/pi/scroller/subcount.txt") as file:
         subStr = file.read()
 
 ser = serial.Serial('/dev/ttyUSB0')

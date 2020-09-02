@@ -11,6 +11,6 @@ class EventHandler(pyinotify.ProcessEvent):
 
 handler = EventHandler()
 notifier = pyinotify.Notifier(wm, handler)
-wdd = wm.add_watch('/path/to/file/mytext.txt', mask, rec=True) # change your path and file names accordingly
+wdd = wm.add_watch('/home/pi/scroller/mytext.txt', mask, rec=True) # change your path and file names accordingly
 
 notifier.loop()

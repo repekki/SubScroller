@@ -4,7 +4,7 @@ $action = $_GET["action"];
 $myText = $_POST["mytext"];
 
 if($action = "save") {
-  $targetFolder = "/path/to/file/"; // change path accordingly
+  $targetFolder = "/home/pi/scroller/"; // change path accordingly
   file_put_contents($targetFolder."mytext.txt", $myText);
 }
 ?>
